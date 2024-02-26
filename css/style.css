@@ -1,0 +1,165 @@
+h2{
+    font-family:cursive;
+    text-align: center;
+    font-size: 40px;
+}
+#cont_padre{
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    z-index: 1;
+    animation: pulse 10s infinite;
+}
+
+@keyframes pulse {
+    0%{
+        background: red;
+    }
+    10% {
+      background: url(../images/toy_story0.jpg);
+      background-size: cover;
+    }
+    20%{
+        background: url(../images/toy_story1.jpg);
+        background-size: cover;
+    }
+    40%{
+        background: url(../images/toy_story2.jpg);
+        background-size: cover;
+    }
+    60%{
+        background: url(../images/toy_story3.jpg);
+        background-size: cover;
+    }
+    80%{
+        background: url(../images/toy_story4.jpg);
+        background-size: cover;
+    }
+    100% {
+      background: url(../images/toy_story5.jpg);
+      background-size: cover;
+    }
+  }
+
+.cara{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 350px;
+    margin: 0 auto;
+    z-index: 3;
+    transition: 1s;
+}
+
+.gorro{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 250px;
+    margin: 0 auto;
+    z-index: 3;
+    transition: 1s;
+}
+
+.ojo_izq{
+    position: absolute;
+    left: 877px;
+    top: 380px;
+    z-index: 4;
+    transition: 1s;
+}
+
+.ojo_der{
+    position: absolute;
+    right: 877px;
+    top: 380px;
+    z-index: 4;
+    transition: 1s;
+}
+
+.oreja_der{
+    position: absolute;
+    right: 780px;
+    top: 380px;
+    z-index: 2;
+    transition: 1s;
+}
+.oreja_izq{
+    position:absolute;
+    left: 780px;
+    top: 380px;
+    z-index: 2;
+    transition: 1s;
+}
+.pata_izq{
+    position: absolute;
+    left: 970px;
+    bottom: 200px;
+    z-index: 2;
+    transition: 1s;
+}
+.pata_der{
+    position: absolute;
+    right: 970px;
+    bottom: 200px;
+    z-index: 2;
+    transition: 1s;
+}
+.mostacho{
+    position: absolute;
+    bottom: 300px;
+    z-index: 4;
+    left: 868px;
+    transition: 1s;
+}
+.nariz{
+    position: absolute;
+    top: 450px;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+#cont_padre:hover .gorro{
+    top: 220px;
+    transform: rotate(360deg) scale(1.5);
+
+}
+
+#cont_padre:hover .ojo_izq{
+
+    transform: scale(1.4);
+}
+
+#cont_padre:hover .ojo_der{
+
+    transform: scale(1.4);
+}
+
+#cont_padre:hover .oreja_izq{
+    transform: scale(2.0);
+}
+
+#cont_padre:hover .oreja_der{
+    transform: scale(2.0);
+}
+
+#cont_padre:hover .pata_izq{
+    transform: translateX(45px);
+}
+
+#cont_padre:hover .pata_der{
+    transform: translateX(-45px);
+}
+
+#cont_padre:hover .mostacho{
+    bottom: 350px;
+    transform:scale(1.5);
+}
+
+#cont_padre:hover .nariz{
+    transform: rotate(720deg);
+}
